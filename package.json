@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-font-spider": "^0.3.6"
+  }
+}

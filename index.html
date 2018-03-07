@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>华为云不宕机新年红包雨</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script>!function(a,b){function c(){var b=f.getBoundingClientRect().width;b/i>540&&(b=540*i);var c=b/10;f.style.fontSize=c+"px",k.rem=a.rem=c}var d,e=a.document,f=e.documentElement,g=e.querySelector('meta[name="viewport"]'),h=e.querySelector('meta[name="flexible"]'),i=0,j=0,k=b.flexible||(b.flexible={});if(g){console.warn("将根据已有的meta标签来设置缩放比例");var l=g.getAttribute("content").match(/initial\-scale=([\d\.]+)/);l&&(j=parseFloat(l[1]),i=parseInt(1/j))}else if(h){var m=h.getAttribute("content");if(m){var n=m.match(/initial\-dpr=([\d\.]+)/),o=m.match(/maximum\-dpr=([\d\.]+)/);n&&(i=parseFloat(n[1]),j=parseFloat((1/i).toFixed(2))),o&&(i=parseFloat(o[1]),j=parseFloat((1/i).toFixed(2)))}}if(!i&&!j){var p=(a.navigator.appVersion.match(/android/gi),a.navigator.appVersion.match(/iphone/gi)),q=a.devicePixelRatio;i=p?q>=3&&(!i||i>=3)?3:q>=2&&(!i||i>=2)?2:1:1,j=1/i}if(f.setAttribute("data-dpr",i),!g)if(g=e.createElement("meta"),g.setAttribute("name","viewport"),g.setAttribute("content","initial-scale="+j+", maximum-scale="+j+", minimum-scale="+j+", user-scalable=no"),f.firstElementChild)f.firstElementChild.appendChild(g);else{var r=e.createElement("div");r.appendChild(g),e.write(r.innerHTML)}a.addEventListener("resize",function(){clearTimeout(d),d=setTimeout(c,300)},!1),a.addEventListener("pageshow",function(a){a.persisted&&(clearTimeout(d),d=setTimeout(c,300))},!1),"complete"===e.readyState?e.body.style.fontSize=12*i+"px":e.addEventListener("DOMContentLoaded",function(){e.body.style.fontSize=12*i+"px"},!1),c(),k.dpr=a.dpr=i,k.refreshRem=c,k.rem2px=function(a){var b=parseFloat(a)*this.rem;return"string"==typeof a&&a.match(/rem$/)&&(b+="px"),b},k.px2rem=function(a){var b=parseFloat(a)/this.rem;return"string"==typeof a&&a.match(/px$/)&&(b+="rem"),b}}(window,window.lib||(window.lib={}));</script>
+    <script src="/js/soundjs.min.js"></script>
+
+    <link rel="stylesheet" href="/css/public.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/libs/animate.min.css">
+    <link rel="stylesheet" href="https://res.wx.qq.com/open/libs/weui/1.1.2/weui.min.css">
+    <!--启动页预加载的图片-->
+    <link rel="preload" href="/imgs/logo.png" as="image">
+    <link rel="preload" href="/imgs/bg.jpg" as="image">
+    <link rel="preload" href="/imgs/cloud1.png" as="image">
+    <link rel="preload" href="/imgs/music1.png" as="image">
+    <link rel="preload" href="/imgs/bg2.png" as="image">
+    <link rel="preload" href="/imgs/boom.png" as="image">
+    <link rel="preload" href="/imgs/card_ai.png" as="image">
+    <link rel="preload" href="/imgs/card_sage.png" as="image">
+    <link rel="preload" href="/imgs/card_trust.png" as="image">
+    <link rel="preload" href="/imgs/cloud2.png" as="image">
+    <link rel="preload" href="/imgs/cloud3.png" as="image">
+    <link rel="preload" href="/imgs/cloud4.png" as="image">
+    <link rel="preload" href="/imgs/dog.png" as="image">
+    <link rel="preload" href="/imgs/dog2.png" as="image">
+    <link rel="preload" href="/imgs/failed.png" as="image">
+    <link rel="preload" href="/imgs/hb1.png" as="image">
+    <link rel="preload" href="/imgs/hb2.png" as="image">
+    <link rel="preload" href="/imgs/logo2.png" as="image">
+    <link rel="preload" href="/imgs/muusic2.png" as="image">
+    <link rel="preload" href="/imgs/rule.png" as="image">
+    <link rel="preload" href="/imgs/shake.png" as="image">
+    <link rel="preload" href="/imgs/start.png" as="image">
+    <link rel="preload" href="/imgs/success.png" as="image">
+    <link rel="preload" href="/imgs/2018.png" as="image">
+    <link rel="preload" href="/imgs/nomusic1.png" as="image">
+    <link rel="preload" href="/imgs/b1.png" as="image">
+    <link rel="preload" href="/imgs/b2.png" as="image">
+    <link rel="preload" href="/imgs/b3.png" as="image">
+    <link rel="preload" href="/imgs/b4.png" as="image">
+    <link rel="preload" href="/imgs/btn1.png" as="image">
+    <link rel="preload" href="/imgs/btn2.png" as="image">
+    <link rel="preload" href="/imgs/btn3.png" as="image">
+    <link rel="preload" href="/imgs/btn4.png" as="image">
+    <!--预加载音乐-->
+    <link rel="preload" href="/libs/audio/music.mp3" as="audio">
+    <link rel="preload" href="/libs/audio/bom.mp3" as="audio">
+    <link rel="preload" href="/libs/audio/coin.mp3" as="audio">
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+  </head>
+  <body>
+  <div style="display: none">1234567890</div>
+  <div class="content-wrap">
+    <!--第一页-->
+    <div class="page1">
+      <img src="/imgs/logo.png" class="logo">
+      <div class="music">
+        <img src="/imgs/music1.png" class="play playing">
+        <img src="/imgs/nomusic1.png" class="play play-stop" style="display: none">
+        <audio src="/libs/audio/music.mp3" autoplay loop style="display: none"></audio>
+      </div>
+      <!--启动页-->
+      <div class="wrapper1">
+        <p>华为云祝您</p>
+        <div class="welcome">
+          <div>戊丨戌丨新丨年丨大丨吉丨大丨利</div>
+          <div class="load-txt">
+            <img src="/imgs/2018.png" alt="">不宕机
+          </div>
+        </div>
+        <div class="cloud-wraper">
+          <img src="/imgs/cloud1.png" class="cloud animated infinite shake">
+        </div>
+        <div class="progress">
+          <div class="progressbar"></div>
+          <div class="progresstext">
+          </div>
+        </div>
+        <div class="percent">0%</div>
+        <p class="loading-hb">红包正在飞速的加载中</p>
+      </div>
+      <!--摇一摇-->
+      <div class="wrapper2" style="display: none">
+        <div><img src="/imgs/cloud2.png" alt="" class="animated infinite shake"></div>
+        <div><img class="animated infinite wobble" src="/imgs/shake.png" alt=""></div>
+        <p>请用力摇一摇</p>
+        <p>启动「华为云」红包雨</p>
+      </div>
+      <div class="wrapper3" style="display: none">
+        <img src="/imgs/cloud3.png" alt="" class="animated infinite shake">
+        <p>「华为云」红包雨已经生成</p>
+        <div class="startgame animated infinite swing btn"></div>
+      </div>
+    </div>
+    <!--第二页, 游戏容器-->
+    <div class="page2" style="display: none">
+      <audio src="/libs/audio/coin.mp3" class="coin_music" style="display: none"></audio>
+      <audio src="/libs/audio/bom.mp3" class="bom_music" style="display: none"></audio>
+      <img src="/imgs/logo2.png" class="logo">
+      <div class="music">
+        <img src="/imgs/muusic2.png" class="play playing">
+        <img src="/imgs/nomusic2.png" class="play play-stop" style="display: none">
+
+      </div>
+      <div class="timer">
+        <span class="timer-count"></span>&nbsp;秒
+      </div>
+         <img src="/imgs/cloud4.png" class="cloud">
+        <div class="dog">
+          <div  style="display: block" class="r-dog"></div>
+          <div  style="display: none" class="l-dog"></div>
+        </div>
+    </div>
+    <!--蒙层-->
+    <div class="mask" style="display: none"></div>
+    <!--规则弹窗-->
+    <div class="rule-wrapper" style="display: none">
+      <div class="game-rule">
+        <img src="/imgs/rule.png" alt="">
+        <!--开始游戏按钮！！-->
+        <div class="rule-btn btn"></div>
+      </div>
+    </div>
+    <!--游戏失败-->
+    <div class="game-over" style="display: none">
+      <div class="over-wrapper">
+        <img src="/imgs/failed.png" alt="">
+        <!--重新开始按钮，页面有两个，都绑定在re-start类就行了-->
+        <div class="re-start btn"></div>
+      </div>
+    </div>
+    <!--游戏成功-->
+    <div class="good-luck" style="display: none">
+      <div class="success-wrapper">
+        <img src="/imgs/success.png" alt="">
+        <!--收获到的红包数量-->
+        <div class="count">
+          <div>&times;<span class="hb-mark">0</span></div>
+          <div>&times;<span class="aq-mark">0</span></div>
+          <div>&times;<span class="kx-mark">0</span></div>
+          <div>&times;<span class="zn-mark">0</span></div>
+        </div>
+        <!--赢取的总金额-->
+        <div class="money"><span>￥</span> <span class="all-money"></span></div>
+        <!--立即兑换-->
+        <div class="duihuan btn"></div>
+        <!--重新开始-->
+        <div class="re-start"></div>
+        <div class="share">分享好友</div>
+        <img src="/imgs/arrow.png" alt="" class="arrow">
+      </div>
+    </div>
+  </div>
+  <script>
+    //  背景音乐自动播放
+    document.addEventListener("WeixinJSBridgeReady", function () {
+      document.querySelector('.page1 audio').play();
+    }, false);
+  </script>
+  <script src="/js/inobounce.min.js"></script>
+  <script type="text/javascript" src="https://res.wx.qq.com/open/libs/weuijs/1.1.3/weui.min.js"></script>
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  <script src="/js/resLoader.js"></script>
+  <script src="/js/dog.js"></script>
+  <script src="/js/index.js"></script>
+  <!--<script src="https://cdn.jsdelivr.net/npm/vconsole@2.5.2/dist/vconsole.min.js"></script>-->
+  </body>
+</html>
